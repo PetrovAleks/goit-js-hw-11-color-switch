@@ -12,9 +12,31 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+.btn-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+button {
+  width: 100px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(120, 192, 252);
+  cursor: pointer;
 
-  /*
-   * CSS image reference example.
-   */
-  background-image: url('./images/bg-pattern.png');
+  font-size: 18px;
+  font-weight: bold;
+
+  transform: scale(1);
+  transition: transform 250ms linear;
+}
+button:first-child {
+  margin-right: 40px;
+}
+button:hover,
+button:focus {
+  transform: scale(1.1);
 }
